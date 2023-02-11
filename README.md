@@ -29,7 +29,7 @@ class Example extended Pulse {
 }
 
 header('Content-type: text/plain; charset=utf-8');
-$example = Example::getInstace();
+$example = Example::getInstance();
 $example->doRouting();
 ```
 

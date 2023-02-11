@@ -31,7 +31,7 @@ class Build extends Pulse {
 
 function main() {
     header('Content-type: text/plain; charset=utf-8');
-    $build = Build::getInstace();
+    $build = Build::getInstance();
     $build->doRouting();
 }
 

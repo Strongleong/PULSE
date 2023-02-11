@@ -14,7 +14,7 @@ abstract class Pulse {
     /**
      * @return self
      */
-    static public function getInstace() {
+    static public function getInstance() {
         if (self::$instance === null) {
             self::$instance = new static;
         }
