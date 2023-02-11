@@ -122,5 +122,5 @@ Console.
  - [X] Starting recipes with HTTP request
  - [X] Assuring that some recipes will be called before others
  - [X] Handy-ish way to call cosonle comands
- - [ ] Run all recipes on `/` endpoint
+ - [X] Run all recipes on `/` endpoint
  - [ ] ...
