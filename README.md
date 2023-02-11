@@ -83,7 +83,7 @@ $ curl localhost:1337/build/install # This works too, `build` will not be called
 
 Example:
 
-```
+```php
 class Example extended Pulse {
     protected function build() {
         $recipe = (new Console())
@@ -98,7 +98,7 @@ class Example extended Pulse {
 
 You can chain command to not execute next commands if one fails:
 
-```
+```php
 class Example extended Pulse {
     protected function build() {
         $recipe = (new Console())
