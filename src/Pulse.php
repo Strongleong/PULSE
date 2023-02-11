@@ -32,10 +32,20 @@ abstract class Pulse {
                 continue;
             }
 
-            $recipes[] = $method->getName();
+            $methodName = $method->getName();
+
+            if ($routes === "") {
+                $this->runRecipe($methodName);
+            }
+
+            $recipes[] = $methodName;
         }
 
         foreach (explode('/', $routes) as $recipe) {
+            if ($recipe === "") {
+                break;
+            }
+
             if (!in_array($recipe, $recipes)) {
                 echo "Error: no recipe `$recipe` found." . PHP_EOL;
                 die;

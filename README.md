@@ -50,6 +50,12 @@ Also you can run several recipes with this sort of request:
 $ curl localhost:1337/build/run/test/foo/bar/baz
 ```
 
+Or run every single one with `/` endpoint:
+
+```console
+$ curl localhost:1337/
+```
+
 If you want to make sure that one recipe runs **before** another, you should add
 `$this->runRecipe('firstRecipe');` to your recipe:
 
@@ -116,4 +122,5 @@ Console.
  - [X] Starting recipes with HTTP request
  - [X] Assuring that some recipes will be called before others
  - [X] Handy-ish way to call cosonle comands
+ - [ ] Run all recipes on `/` endpoint
  - [ ] ...
